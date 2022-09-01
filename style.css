@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+:root {
+    --fontFamily: 'Droid Arabic Kufi', serif;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    direction: rtl;
+    font-family: var(--fontFamily);
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+.container {
+    width: 70%;
+    height: 25%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+    background-color: #333333c7;
+    border-radius: 10px;
+}
+h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: #FFF;
+    font-size: 1.5rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.container select {
+    height: 48%;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: rgb(75, 72, 72);
+    font-family: var(--fontFamily);
+}
+form {
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.container select:first-child,
+.container select:nth-child(3),
+.container select:nth-child(4) {
+    width: 20%;
+}
+.container select:nth-child(2) {
+    width: 58%;
+}
+.container input[type="submit"] {
+    width: 20%;
+    color: #FFF;
+    background-color: rgb(18, 148, 85);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Droid Arabic Kufi', serif;;
+}
+.container input[type="submit"]:hover {
+    opacity: 0.6;
+}
+.links {
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: center;
+}
+.links a {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color: #9e9e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0 10px;
+}
+a:hover {
+    border-bottom: 1px solid #FFF;
+    color: aliceblue;
+}
+.cpy-right {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    width: fit-content;
+    background-color: #FFF;
+    color: #333;
+    padding: 10px;
+    font-family: sans-serif;
+    direction: ltr;
+}
